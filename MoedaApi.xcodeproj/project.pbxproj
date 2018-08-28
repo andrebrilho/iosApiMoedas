@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAB2C25C2134D11C002E769B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2C25B2134D11C002E769B /* AppDelegate.swift */; };
+		EAB2C25E2134D11C002E769B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2C25D2134D11C002E769B /* ViewController.swift */; };
+		EAB2C2612134D11C002E769B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB2C25F2134D11C002E769B /* Main.storyboard */; };
+		EAB2C2632134D11D002E769B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB2C2622134D11D002E769B /* Assets.xcassets */; };
+		EAB2C2662134D11D002E769B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB2C2642134D11D002E769B /* LaunchScreen.storyboard */; };
+		EAB2C2712134D11D002E769B /* MoedaApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2C2702134D11D002E769B /* MoedaApiTests.swift */; };
+		EAB2C27C2134D11D002E769B /* MoedaApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2C27B2134D11D002E769B /* MoedaApiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAB2C26D2134D11D002E769B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB2C2502134D11C002E769B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAB2C2572134D11C002E769B;
+			remoteInfo = MoedaApi;
+		};
+		EAB2C2782134D11D002E769B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB2C2502134D11C002E769B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAB2C2572134D11C002E769B;
+			remoteInfo = MoedaApi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAB2C2582134D11C002E769B /* MoedaApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoedaApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB2C25B2134D11C002E769B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAB2C25D2134D11C002E769B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAB2C2602134D11C002E769B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAB2C2622134D11D002E769B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAB2C2652134D11D002E769B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAB2C2672134D11D002E769B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB2C26C2134D11D002E769B /* MoedaApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoedaApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB2C2702134D11D002E769B /* MoedaApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoedaApiTests.swift; sourceTree = "<group>"; };
+		EAB2C2722134D11D002E769B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB2C2772134D11D002E769B /* MoedaApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoedaApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB2C27B2134D11D002E769B /* MoedaApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoedaApiUITests.swift; sourceTree = "<group>"; };
+		EAB2C27D2134D11D002E769B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAB2C2552134D11C002E769B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB2C2692134D11D002E769B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB2C2742134D11D002E769B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAB2C24F2134D11C002E769B = {
+			isa = PBXGroup;
+			children = (
+				EAB2C25A2134D11C002E769B /* MoedaApi */,
+				EAB2C26F2134D11D002E769B /* MoedaApiTests */,
+				EAB2C27A2134D11D002E769B /* MoedaApiUITests */,
+				EAB2C2592134D11C002E769B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAB2C2592134D11C002E769B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2C2582134D11C002E769B /* MoedaApi.app */,
+				EAB2C26C2134D11D002E769B /* MoedaApiTests.xctest */,
+				EAB2C2772134D11D002E769B /* MoedaApiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAB2C25A2134D11C002E769B /* MoedaApi */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2C25B2134D11C002E769B /* AppDelegate.swift */,
+				EAB2C25D2134D11C002E769B /* ViewController.swift */,
+				EAB2C25F2134D11C002E769B /* Main.storyboard */,
+				EAB2C2622134D11D002E769B /* Assets.xcassets */,
+				EAB2C2642134D11D002E769B /* LaunchScreen.storyboard */,
+				EAB2C2672134D11D002E769B /* Info.plist */,
+			);
+			path = MoedaApi;
+			sourceTree = "<group>";
+		};
+		EAB2C26F2134D11D002E769B /* MoedaApiTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2C2702134D11D002E769B /* MoedaApiTests.swift */,
+				EAB2C2722134D11D002E769B /* Info.plist */,
+			);
+			path = MoedaApiTests;
+			sourceTree = "<group>";
+		};
+		EAB2C27A2134D11D002E769B /* MoedaApiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2C27B2134D11D002E769B /* MoedaApiUITests.swift */,
+				EAB2C27D2134D11D002E769B /* Info.plist */,
+			);
+			path = MoedaApiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAB2C2572134D11C002E769B /* MoedaApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB2C2802134D11D002E769B /* Build configuration list for PBXNativeTarget "MoedaApi" */;
+			buildPhases = (
+				EAB2C2542134D11C002E769B /* Sources */,
+				EAB2C2552134D11C002E769B /* Frameworks */,
+				EAB2C2562134D11C002E769B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoedaApi;
+			productName = MoedaApi;
+			productReference = EAB2C2582134D11C002E769B /* MoedaApi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAB2C26B2134D11D002E769B /* MoedaApiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB2C2832134D11D002E769B /* Build configuration list for PBXNativeTarget "MoedaApiTests" */;
+			buildPhases = (
+				EAB2C2682134D11D002E769B /* Sources */,
+				EAB2C2692134D11D002E769B /* Frameworks */,
+				EAB2C26A2134D11D002E769B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAB2C26E2134D11D002E769B /* PBXTargetDependency */,
+			);
+			name = MoedaApiTests;
+			productName = MoedaApiTests;
+			productReference = EAB2C26C2134D11D002E769B /* MoedaApiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAB2C2762134D11D002E769B /* MoedaApiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB2C2862134D11D002E769B /* Build configuration list for PBXNativeTarget "MoedaApiUITests" */;
+			buildPhases = (
+				EAB2C2732134D11D002E769B /* Sources */,
+				EAB2C2742134D11D002E769B /* Frameworks */,
+				EAB2C2752134D11D002E769B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAB2C2792134D11D002E769B /* PBXTargetDependency */,
+			);
+			name = MoedaApiUITests;
+			productName = MoedaApiUITests;
+			productReference = EAB2C2772134D11D002E769B /* MoedaApiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAB2C2502134D11C002E769B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "André Brilho";
+				TargetAttributes = {
+					EAB2C2572134D11C002E769B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					EAB2C26B2134D11D002E769B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EAB2C2572134D11C002E769B;
+					};
+					EAB2C2762134D11D002E769B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EAB2C2572134D11C002E769B;
+					};
+				};
+			};
+			buildConfigurationList = EAB2C2532134D11C002E769B /* Build configuration list for PBXProject "MoedaApi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAB2C24F2134D11C002E769B;
+			productRefGroup = EAB2C2592134D11C002E769B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAB2C2572134D11C002E769B /* MoedaApi */,
+				EAB2C26B2134D11D002E769B /* MoedaApiTests */,
+				EAB2C2762134D11D002E769B /* MoedaApiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAB2C2562134D11C002E769B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB2C2662134D11D002E769B /* LaunchScreen.storyboard in Resources */,
+				EAB2C2632134D11D002E769B /* Assets.xcassets in Resources */,
+				EAB2C2612134D11C002E769B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB2C26A2134D11D002E769B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB2C2752134D11D002E769B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAB2C2542134D11C002E769B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB2C25E2134D11C002E769B /* ViewController.swift in Sources */,
+				EAB2C25C2134D11C002E769B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB2C2682134D11D002E769B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB2C2712134D11D002E769B /* MoedaApiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB2C2732134D11D002E769B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB2C27C2134D11D002E769B /* MoedaApiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAB2C26E2134D11D002E769B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAB2C2572134D11C002E769B /* MoedaApi */;
+			targetProxy = EAB2C26D2134D11D002E769B /* PBXContainerItemProxy */;
+		};
+		EAB2C2792134D11D002E769B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAB2C2572134D11C002E769B /* MoedaApi */;
+			targetProxy = EAB2C2782134D11D002E769B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAB2C25F2134D11C002E769B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAB2C2602134D11C002E769B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAB2C2642134D11D002E769B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAB2C2652134D11D002E769B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAB2C27E2134D11D002E769B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAB2C27F2134D11D002E769B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAB2C2812134D11D002E769B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoedaApi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.andrebrilho.MoedaApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAB2C2822134D11D002E769B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoedaApi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.andrebrilho.MoedaApi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAB2C2842134D11D002E769B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoedaApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.andrebrilho.MoedaApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoedaApi.app/MoedaApi";
+			};
+			name = Debug;
+		};
+		EAB2C2852134D11D002E769B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoedaApiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.andrebrilho.MoedaApiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoedaApi.app/MoedaApi";
+			};
+			name = Release;
+		};
+		EAB2C2872134D11D002E769B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoedaApiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.andrebrilho.MoedaApiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoedaApi;
+			};
+			name = Debug;
+		};
+		EAB2C2882134D11D002E769B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoedaApiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.andrebrilho.MoedaApiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoedaApi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAB2C2532134D11C002E769B /* Build configuration list for PBXProject "MoedaApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB2C27E2134D11D002E769B /* Debug */,
+				EAB2C27F2134D11D002E769B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAB2C2802134D11D002E769B /* Build configuration list for PBXNativeTarget "MoedaApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB2C2812134D11D002E769B /* Debug */,
+				EAB2C2822134D11D002E769B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAB2C2832134D11D002E769B /* Build configuration list for PBXNativeTarget "MoedaApiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB2C2842134D11D002E769B /* Debug */,
+				EAB2C2852134D11D002E769B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAB2C2862134D11D002E769B /* Build configuration list for PBXNativeTarget "MoedaApiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB2C2872134D11D002E769B /* Debug */,
+				EAB2C2882134D11D002E769B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAB2C2502134D11C002E769B /* Project object */;
+}
