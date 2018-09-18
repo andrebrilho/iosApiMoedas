@@ -14,6 +14,10 @@
 		EAB2C2662134D11D002E769B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB2C2642134D11D002E769B /* LaunchScreen.storyboard */; };
 		EAB2C2712134D11D002E769B /* MoedaApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2C2702134D11D002E769B /* MoedaApiTests.swift */; };
 		EAB2C27C2134D11D002E769B /* MoedaApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2C27B2134D11D002E769B /* MoedaApiUITests.swift */; };
+		EAB2C28D2134D4FD002E769B /* Moeda.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2C28C2134D4FD002E769B /* Moeda.swift */; };
+		EAB2C28F2134D594002E769B /* MoedaValores.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2C28E2134D594002E769B /* MoedaValores.swift */; };
+		EAB2C2912134D676002E769B /* MoedaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2C2902134D676002E769B /* MoedaResponse.swift */; };
+		EAB2C2932134D6D8002E769B /* ApiNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2C2922134D6D8002E769B /* ApiNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		EAB2C2772134D11D002E769B /* MoedaApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoedaApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAB2C27B2134D11D002E769B /* MoedaApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoedaApiUITests.swift; sourceTree = "<group>"; };
 		EAB2C27D2134D11D002E769B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB2C28C2134D4FD002E769B /* Moeda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moeda.swift; sourceTree = "<group>"; };
+		EAB2C28E2134D594002E769B /* MoedaValores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoedaValores.swift; sourceTree = "<group>"; };
+		EAB2C2902134D676002E769B /* MoedaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoedaResponse.swift; sourceTree = "<group>"; };
+		EAB2C2922134D6D8002E769B /* ApiNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiNetworking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,11 @@
 		EAB2C25A2134D11C002E769B /* MoedaApi */ = {
 			isa = PBXGroup;
 			children = (
-				EAB2C25B2134D11C002E769B /* AppDelegate.swift */,
+				EAB2C28B2134D151002E769B /* Networking */,
+				EAB2C28A2134D148002E769B /* Model */,
+				EAB2C2892134D132002E769B /* SuportingFiles */,
 				EAB2C25D2134D11C002E769B /* ViewController.swift */,
 				EAB2C25F2134D11C002E769B /* Main.storyboard */,
-				EAB2C2622134D11D002E769B /* Assets.xcassets */,
-				EAB2C2642134D11D002E769B /* LaunchScreen.storyboard */,
-				EAB2C2672134D11D002E769B /* Info.plist */,
 			);
 			path = MoedaApi;
 			sourceTree = "<group>";
@@ -123,6 +130,35 @@
 				EAB2C27D2134D11D002E769B /* Info.plist */,
 			);
 			path = MoedaApiUITests;
+			sourceTree = "<group>";
+		};
+		EAB2C2892134D132002E769B /* SuportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2C25B2134D11C002E769B /* AppDelegate.swift */,
+				EAB2C2622134D11D002E769B /* Assets.xcassets */,
+				EAB2C2642134D11D002E769B /* LaunchScreen.storyboard */,
+				EAB2C2672134D11D002E769B /* Info.plist */,
+			);
+			path = SuportingFiles;
+			sourceTree = "<group>";
+		};
+		EAB2C28A2134D148002E769B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2C28C2134D4FD002E769B /* Moeda.swift */,
+				EAB2C28E2134D594002E769B /* MoedaValores.swift */,
+				EAB2C2902134D676002E769B /* MoedaResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAB2C28B2134D151002E769B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EAB2C2922134D6D8002E769B /* ApiNetworking.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB2C2932134D6D8002E769B /* ApiNetworking.swift in Sources */,
+				EAB2C2912134D676002E769B /* MoedaResponse.swift in Sources */,
 				EAB2C25E2134D11C002E769B /* ViewController.swift in Sources */,
+				EAB2C28D2134D4FD002E769B /* Moeda.swift in Sources */,
 				EAB2C25C2134D11C002E769B /* AppDelegate.swift in Sources */,
+				EAB2C28F2134D594002E769B /* MoedaValores.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MoedaApi/Info.plist;
+				INFOPLIST_FILE = MoedaApi/SuportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,7 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MoedaApi/Info.plist;
+				INFOPLIST_FILE = MoedaApi/SuportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

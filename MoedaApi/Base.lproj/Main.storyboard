@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,99 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoedaApi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mhe-Zw-ryq">
+                                <rect key="frame" x="13" y="40" width="349" height="29"/>
+                                <segments>
+                                    <segment title="Dolar"/>
+                                    <segment title="Euro"/>
+                                    <segment title="Libra"/>
+                                    <segment title="Bitcon"/>
+                                    <segment title="Peso Arg"/>
+                                </segments>
+                                <color key="tintColor" red="0.60487388959999999" green="0.5038734761" blue="0.37391207720000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="SegmenMoedaChangesValues:" destination="BYZ-38-t0r" eventType="valueChanged" id="w1x-dR-oIq"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhQ-gH-Cf6">
+                                <rect key="frame" x="40" y="319" width="59" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="RQv-nR-C44"/>
+                                    <constraint firstAttribute="height" constant="29" id="nBt-mq-RgM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.60487388959390864" green="0.50387347610507938" blue="0.37391207716988001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data ultima consulta:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBq-wD-Ot6">
+                                <rect key="frame" x="87" y="570" width="200" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5w9-iB-rr6"/>
+                                    <constraint firstAttribute="height" constant="27" id="bnA-Ho-Ox2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.60487388959390864" green="0.50387347610507938" blue="0.37391207716988001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OM1-5D-b4s">
+                                <rect key="frame" x="20" y="617" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.60487388959999999" green="0.5038734761" blue="0.37391207720000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="J4y-Pz-Qrh">
+                                <rect key="frame" x="109" y="315.5" width="37" height="37"/>
+                                <color key="color" red="0.60487388959999999" green="0.5038734761" blue="0.37391207720000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Jzc-5e-DTM">
+                                <rect key="frame" x="169" y="600" width="37" height="37"/>
+                                <color key="color" red="0.60487388959999999" green="0.5038734761" blue="0.37391207720000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0U-Nc-6Ln">
+                                <rect key="frame" x="119" y="333.5" width="236" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" red="0.60487388959390864" green="0.50387347610507938" blue="0.37391207716988001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jzc-5e-DTM" secondAttribute="bottom" constant="30" id="59E-AE-WdA"/>
+                            <constraint firstItem="Jzc-5e-DTM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Mv-5l-2ET"/>
+                            <constraint firstItem="J4y-Pz-Qrh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-60" id="7Z3-pG-0MX"/>
+                            <constraint firstItem="ZBq-wD-Ot6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MIa-w3-DLq"/>
+                            <constraint firstItem="rhQ-gH-Cf6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="P1q-ZW-nnY"/>
+                            <constraint firstItem="mhe-Zw-ryq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="Ro2-vq-nmm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OM1-5D-b4s" secondAttribute="bottom" constant="50" id="Tpn-dP-s2G"/>
+                            <constraint firstItem="OM1-5D-b4s" firstAttribute="top" secondItem="ZBq-wD-Ot6" secondAttribute="bottom" constant="20" id="Wnq-ul-qTF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mhe-Zw-ryq" secondAttribute="trailing" constant="13" id="X1f-R5-Eae"/>
+                            <constraint firstItem="E0U-Nc-6Ln" firstAttribute="leading" secondItem="rhQ-gH-Cf6" secondAttribute="trailing" constant="20" id="X23-v6-JO0"/>
+                            <constraint firstItem="rhQ-gH-Cf6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="c2Q-by-2rc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E0U-Nc-6Ln" secondAttribute="trailing" constant="20" id="e2t-P1-cpT"/>
+                            <constraint firstItem="J4y-Pz-Qrh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eHO-y1-YN7"/>
+                            <constraint firstItem="E0U-Nc-6Ln" firstAttribute="centerY" secondItem="rhQ-gH-Cf6" secondAttribute="centerY" id="efS-P2-OD8"/>
+                            <constraint firstItem="mhe-Zw-ryq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jd6-XO-Px6"/>
+                            <constraint firstItem="OM1-5D-b4s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mIi-c2-3Zw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OM1-5D-b4s" secondAttribute="trailing" constant="20" id="oa0-GW-hb2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="actIndicator2" destination="J4y-Pz-Qrh" id="Ahf-Hr-PmQ"/>
+                        <outlet property="actindicator" destination="Jzc-5e-DTM" id="0Qv-s2-KcS"/>
+                        <outlet property="lblDataConsulta" destination="OM1-5D-b4s" id="edd-UZ-P83"/>
+                        <outlet property="lblValorMoeda" destination="E0U-Nc-6Ln" id="SJf-Gw-rxl"/>
+                        <outlet property="segmentControl" destination="mhe-Zw-ryq" id="6jC-Ow-JM7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="13.6" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>
